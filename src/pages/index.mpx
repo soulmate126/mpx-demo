@@ -1,6 +1,6 @@
 <template>
   <!-- mpx_config_safelist: 'bg-red-100' -->
-  <list custom-class="bg-red-100" class="bg-red-100"></list>
+  <list custom-class="bg-red-100"></list>
 </template>
 
 <script lang="ts">
