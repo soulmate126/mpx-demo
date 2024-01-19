@@ -1,15 +1,16 @@
 <template>
-  <list></list>
+  <!-- mpx_config_safelist: 'bg-red-100' -->
+  <list custom-class="bg-red-100" class="bg-red-100"></list>
 </template>
 
 <script lang="ts">
-import { createPage } from '@mpxjs/core'
+  import { createPage } from '@mpxjs/core'
 
-createPage({
-  onLoad() {
-    //
-  }
-})
+  createPage({
+    onLoad() {
+      //
+    }
+  })
 </script>
 
 <script type="application/json">
