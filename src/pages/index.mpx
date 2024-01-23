@@ -1,6 +1,7 @@
 <template>
   <!-- mpx_config_safelist: 'bg-red-100' -->
   <list custom-class="bg-red-100"></list>
+  <view class="bg-red-100 text-lg">test</view>
 </template>
 
 <script lang="ts">
@@ -12,7 +13,9 @@
     }
   })
 </script>
+<style lang="sass">
 
+</style>
 <script type="application/json">
   {
     "usingComponents": {
