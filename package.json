@@ -10,6 +10,7 @@
     "build:e2e": "npm run build && npm run test:e2e",
     "build:ssr": "mpx-cli-service build:ssr",
     "serve:ssr": "mpx-cli-service serve:ssr",
+    "serve:web": "mpx-cli-service serve --targets=web",
     "test": "jest test/components"
   },
   "dependencies": {

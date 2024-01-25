@@ -1,6 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   outputDir: `dist/${process.env.MPX_CURRENT_TARGET_MODE}`,
+  lintOnSave: false,
   pluginOptions: {
     mpx: {
       plugin: {
@@ -15,7 +16,9 @@ module.exports = defineConfig({
         }
       },
       loader: {},
-      unocss: {}
+      unocss: {},
+
+      externalClasses: ['custom-class', 'i-class']
     },
     SSR: {
       devClientPort: 8000

@@ -6,23 +6,11 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable"
-    ],
-    "types": [
-      "jest"
-    ],
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": ["jest"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
-  "exclude": [
-    "build",
-    "dist",
-    "config"
-  ]
+  "exclude": ["build", "dist", "config"]
 }
