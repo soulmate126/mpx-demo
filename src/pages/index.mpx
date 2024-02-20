@@ -1,21 +1,27 @@
 <template>
-  <list></list>
+  <radio-group>
+    <radio class="mb-2" />
+    <radio class="mb-2" />
+    <radio />
+  </radio-group>
 </template>
 
 <script lang="ts">
-import { createPage } from '@mpxjs/core'
+  import { createPage } from '@mpxjs/core'
 
-createPage({
-  onLoad() {
-    //
-  }
-})
+  createPage({
+    onLoad() {
+      //
+    }
+  })
 </script>
 
 <script type="application/json">
   {
     "usingComponents": {
-      "list": "../components/list"
+      "list": "../components/list",
+      "radio-group": "../components/radio-group",
+      "radio": "../components/radio"
     }
   }
 </script>

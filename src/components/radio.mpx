@@ -1,0 +1,24 @@
+<template>
+  <view style="padding: 5px; border: 1px solid green">radio</view>
+</template>
+
+<script>
+  import { createComponent } from '@mpxjs/core'
+  import GROUP_PATH from './radio-group.mpx?resolve'
+  createComponent({
+    relations: {
+      [GROUP_PATH]: {
+        type: 'ancestor'
+      }
+    },
+    created() {
+      console.log(this.getRelationNodes(GROUP_PATH))
+    }
+  })
+</script>
+
+<script type="application/json">
+  {
+    "usingComponents": {}
+  }
+</script>
