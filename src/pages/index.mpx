@@ -1,9 +1,9 @@
 <template>
-  <radio-group>
-    <radio class="mb-2" />
-    <radio class="mb-2" />
-    <radio />
-  </radio-group>
+  <m-radio-group>
+    <m-radio class="mb-2" />
+    <m-radio class="mb-2" />
+    <m-radio />
+  </m-radio-group>
 </template>
 
 <script lang="ts">
@@ -20,8 +20,8 @@
   {
     "usingComponents": {
       "list": "../components/list",
-      "radio-group": "../components/radio-group",
-      "radio": "../components/radio"
+      "m-radio-group": "../components/radio-group",
+      "m-radio": "../components/radio"
     }
   }
 </script>

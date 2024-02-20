@@ -1,18 +1,19 @@
 <template>
-  <view style="padding: 5px; border: 1px solid green">radio</view>
+  <view class="p-1 border-1 border-solid border-green">radio</view>
 </template>
 
 <script>
   import { createComponent } from '@mpxjs/core'
-  import GROUP_PATH from './radio-group.mpx?resolve'
+  import RADIO_GROUP_PATH from './radio-group.mpx?resolve'
   createComponent({
     relations: {
-      [GROUP_PATH]: {
-        type: 'ancestor'
+      [RADIO_GROUP_PATH]: {
+        type: 'ancestor',
+        linked: (target) => console.log(`[${RADIO_GROUP_PATH}]: linked`, target)
       }
     },
-    created() {
-      console.log(this.getRelationNodes(GROUP_PATH))
+    mounted() {
+      console.log('radio getRelationNodes', this.getRelationNodes(RADIO_GROUP_PATH)[0])
     }
   })
 </script>

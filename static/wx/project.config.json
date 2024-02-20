@@ -6,10 +6,25 @@
     "postcss": true,
     "minified": false,
     "checkSiteMap": false,
-    "autoAudits": false
+    "autoAudits": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
-  "appid": "touristappid",
+  "appid": "wx9451f12a532c3dc1",
   "projectname": "mpx-project-2.9",
   "description": "A mpx project",
-  "condition": {}
+  "condition": {},
+  "compileType": "miniprogram",
+  "libVersion": "3.3.3",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

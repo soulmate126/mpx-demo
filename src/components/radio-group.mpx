@@ -10,11 +10,14 @@
   createComponent({
     relations: {
       [RADIO_PATH]: {
-        type: 'descendant'
+        type: 'descendant',
+        linked: (target) => {
+          console.log(`${RADIO_PATH}: linked`, target)
+        }
       }
     },
-    created() {
-      console.log(this.getRelationNodes(RADIO_PATH))
+    mounted() {
+      console.log('radio-group getRelationNodes', this.getRelationNodes(RADIO_PATH))
     }
   })
 </script>
